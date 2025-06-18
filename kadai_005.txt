@@ -1,0 +1,54 @@
+**Step1. ローカルリポジトリ「git_challenge」を作成する**
+PS C:\Users\yuco> cd C:\samurai
+PS C:\samurai> mkdir git_challenge
+
+PS C:\samurai> cd C:\samurai\git_challenge
+PS C:\samurai\git_challenge> git init
+Initialized empty Git repository in C:/samurai/git_challenge/.git/
+
+
+**Step2. テキストファイル「hello_world.txt」を作成する**
+PS C:\samurai\git_challenge> git add hello_world.txt
+PS C:\samurai\git_challenge> git commit -m "Hello, world!を追加"
+[main (root-commit) ba811f9] Hello, world!を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+
+
+Step3. 「hello_world.txt」に2回の変更をコミットする
+PS C:\samurai\git_challenge> git add hello_world.txt
+PS C:\samurai\git_challenge> git commit -m "こんにちは、世界！を追記"
+[main 41da2a1] こんにちは、世界！を追記
+ 1 file changed, 2 insertions(+)
+
+
+Step4. 「hello_world.txt」の変更履歴を表示する
+PS C:\samurai\git_challenge> git log --oneline
+41da2a1 (HEAD -> main) こんにちは、世界！を追記
+ba811f9 Hello, world!を追加
+
+
+Step5. 課題用ディレクトリ「kadai_005」を作成する
+PS C:\samurai\git_challenge> cd C:\samurai
+PS C:\samurai> mkdir kadai_005
+
+
+    ディレクトリ: C:\samurai
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/06/18     19:26                kadai_005
+
+
+PS C:\samurai> git init
+Initialized empty Git repository in C:/samurai/.git/
+
+
+Step6. 課題用のテキストファイル「kadai_005.txt」を作成する
+PS C:\samurai> cd C:\samurai\kadai_005
+PS C:\samurai\kadai_005> git init
+Initialized empty Git repository in C:/samurai/kadai_005/.git/
+
+PS C:\samurai\kadai_005> git add kadai_005.txt
+
